@@ -1,8 +1,7 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    var audioPlayer = document.getElementById('audioPlayer');
-    if (audioPlayer) {
+audioPlayer = document.createElement('audio');
+        audioPlayer.id = 'audioPlayer';
+        audioPlayer.controls = true;
+        audioPlayer.autoplay = true;
+        document.body.appendChild(audioPlayer);
+        audioPlayer.src = 'https://listen.181fm.com/181-beat_128k.mp3';
         audioPlayer.play();
-    } else {
-        console.error('Audio player not found');
-    }
-});
