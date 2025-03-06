@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPTV Streaming Brasil by @TSheiks</title>
-    <audio id="audioPlayer" controls autoplay>
+    <audio id="audioPlayer" controls>
         <source src="https://listen.181fm.com/181-beat_128k.mp3" type="audio/mpeg">
         </audio>
     <style>
@@ -27,7 +27,9 @@
         #audioPlayer::-webkit-media-controls-time-remaining-display,
         #audioPlayer::-moz-media-controls-time-remaining-display,
         #audioPlayer::-webkit-media-controls-timeline,
-        #audioPlayer::-webkit-media-controls-volume-slider,
+        #audioPlayer::-webkit-media-controls-volume-slider {
+            color: rgb(217, 255, 0);
+        }
     </style>
     <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/banking-3/100/bank-35-512.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
